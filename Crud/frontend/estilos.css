@@ -1,0 +1,120 @@
+:root {
+    --primary-color: #1e272e;
+    --secondary-color: #174b3e;
+    --accent-color: #0abde3;
+    --background-color: #4169E1; /* Azul rey */
+    --font-family: "Poppins", Arial, sans-serif;
+    --font-size: 16px;
+    --heading-font-size: 24px;
+    --line-height: 1.6;
+    --border-radius: 12px;
+    --transition-duration: 0.3s;
+    --shadow-light: 0 4px 10px rgba(0, 0, 0, 0.1);
+    --shadow-hover: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    background-color:#80888d!important; 
+    margin: 0;
+    padding: 0;
+    transition: background-color var(--transition-duration);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#main {
+    width: 90%;
+    max-width: 1000px;
+    background: #2C5364
+    ;
+    padding: 25px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-light);
+    text-align: center;
+}
+
+h1 {
+    font-size: var(--heading-font-size);
+    margin-bottom: 20px;
+}
+
+#marco {
+    border-radius: var(--border-radius);
+    border: 2px solid var(--secondary-color);
+    background-color: #568aa0
+    ;
+    width: 100%;
+    padding: 20px;
+    color: rgb(226, 211, 211);
+    box-shadow: var(--shadow-light);
+    transition: background-color var(--transition-duration), transform var(--transition-duration), box-shadow var(--transition-duration);
+}
+
+#marco:hover {
+    background-color: #7e8e9e;
+    transform: scale(1.03);
+    box-shadow: var(--shadow-hover);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: var(--primary-color);
+    background-color: rgb(179, 161, 161);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-light);
+}
+
+table th, table td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+table th {
+    background-color: var(--primary-color);
+    color: white;
+    text-transform: uppercase;
+}
+
+table tr:hover {
+    background-color: rgba(92, 108, 124, 0.15);
+    cursor: pointer;
+    transition: background-color var(--transition-duration);
+}
+
+button {
+    background-color: var(--accent-color);
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all var(--transition-duration);
+}
+
+button:hover {
+    background-color: #0984e3;
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+    #main {
+        width: 95%;
+    }
+
+    table th, table td {
+        padding: 10px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+}
